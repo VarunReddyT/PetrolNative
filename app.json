@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "petrol2",
+    "slug": "petrol2",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.tvarunreddy.petrol2"
+    },
+    "ios": {
+      "bundleIdentifier": "com.tvarunreddy.petrol2"
+    }
+  },
+  "name": "petrol2"
+}
