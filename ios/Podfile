@@ -13,7 +13,11 @@ install! 'cocoapods',
 
 prepare_react_native_project!
 
+<<<<<<< HEAD
 target 'petrol2' do
+=======
+target 'petrol' do
+>>>>>>> 25386b47d06e02de4c4cbd3d0f96997624299a2f
   use_expo_modules!
   config = use_native_modules!
 
@@ -25,7 +29,13 @@ target 'petrol2' do
     :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/..",
+<<<<<<< HEAD
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
+=======
+    # Temporarily disable privacy file aggregation by default, until React
+    # Native 0.74.2 is released with fixes.
+    :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] == 'true',
+>>>>>>> 25386b47d06e02de4c4cbd3d0f96997624299a2f
   )
 
   post_install do |installer|
